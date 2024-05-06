@@ -3,10 +3,11 @@
 //-----------------------------------------------
 
 // #let (background-color, text-color) = (black, white)
-#let (background-color, text-color) = (white, black)
+#let (background-color, text-color) = (white, aqua)
 #let number-of-pages = 10
 #let footer_left = [Author's name]
 #let footer_right = "Page " + counter(page).display("1/1",both: true)
+// #footer_right = #text(fill: black)[#footer_right]
 
 
 
