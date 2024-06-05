@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "multi-files-reference/multi-ref.pdf": true,
+        // "multi-files-reference/*.pdf": true,
+    }
+}

@@ -65,7 +65,7 @@
   author:  align(right)[#text(fill: blue, size: 2.5em, stroke: none)[By *Tran Thu Le*] #h(4em)],
   year: text(fill: black, size: 1.5em, stroke: none)[_Vietnam 2024_],
   image-link: "../book-cover/imgs/archimedes.png",
-  color-background: gradient.conic(..color.map.rainbow, center: (-10%, 30%),).sharp(13, smoothness: 30%))
+  color-background: gradient.conic(..color.map.rainbow, center: (-10%, 30%),).sharp(13, smoothness: 30%)
 )
 
 
