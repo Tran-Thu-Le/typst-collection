@@ -51,7 +51,7 @@
   cell-height: (2fr, 1fr, 1fr),
   content-radius: 0.13,
   hiden-stroke: none,
-  axis-tick-color: gray,
+  show-axis-tick: true,
   stroke-style: black,
 ) = {
   import cetz.draw: circle, rect, line, content, anchor, group
@@ -65,6 +65,12 @@
     for i in range(n) {
       for j in range(m) {
         anchor(str(i)+str(j), (x-pos.at(i), y-pos.at(j)))
+
+        // show axis tick     
+        let axis-tick-color = white 
+        if show-axis-tick {
+          axis-tick-color = gray
+        }
         if i==0 and j==0 {
           content((x-pos.at(i), y-pos.at(j)), text(fill: axis-tick-color, size: 10pt, $0$), anchor: "north-east", padding: 0.05)
         } else if i==0 {
@@ -101,7 +107,7 @@
     table-height: 4,
     cell-width: (0.6fr, 2fr, 2fr, 2fr),
     cell-height: (3fr, 1fr, 1fr),
-    axis-tick-color: gray,
+    show-axis-tick: true,
     stroke-style: black,
   )
 
